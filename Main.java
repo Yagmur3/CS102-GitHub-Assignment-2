@@ -80,7 +80,8 @@ public class Main {
     }
 
     /**
-    *This method will find the difference between each value in the array and the average of the array and return an array of it.
+    *This method will find the difference between each value in the array 
+    *and the average of the array and return an array of it.
     */
     public static int[] findDiff(int[] givenArray){
 
