@@ -66,15 +66,33 @@ public class Main {
     /**
     *This method will take an array of integers, find its average.
     */
-    public static int findAvg(int[] inputArray){
+    public static int findAvg(int[] givenArray){
+        
         int sum = 0;
         int average = 0;
-        for (int i = 0; i < inputArray.length; i++){
-            sum += inputArray[i];
+        
+        for (int i = 0; i < givenArray.length; i++){
+            sum += givenArray[i];
         }
-        average = sum / inputArray.length;
+        average = sum / givenArray.length;
 
         return average;
+    }
+
+    /**
+    *This method will find the difference between each value in the array and the average of the array and return an array of it.
+    */
+    public static int[] findDiff(int[] givenArray){
+
+        //we need the average for this method so findAvg is called.
+        int average = findAvg(givenArray);
+        
+        int[] diffArray = new int [givenArray.length];
+        for (int i = 0; i < givenArray.length; i++){
+            diffArray[i] = givenArray[i] - average;
+        }
+
+        return diffArray;
     }
 
     /**
