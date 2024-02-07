@@ -63,8 +63,29 @@ public class Main {
         
     }
 
+    /**
+    * This method will take an array of integers as parameter and return the sum 
+    * of its elements at odd indexes (e.g. 1, 3, 5, etc.)
+    */
     public static int oddSum(int[] inputArray) {
-        
+        int oddSum = 0;
+        for (int i = 1; i < inputArray.length; i+= 2) {
+            oddSum += inputArray[i];
+        }
+
+        return oddSum;
     }
+
+    /**
+    * This method will take an array of integers as parameter and return the sum 
+    * of its elements at even indexes (e.g. 0, 2, 4, etc.)
+    */
+    public static int evenSum(int[] inputArray) {
+        int evenSum = 0;
+        for (int i = 0; i < inputArray.length; i += 2) {
+            evenSum += inputArray[i];
+        }
+
+        return evenSum;
     
 }
