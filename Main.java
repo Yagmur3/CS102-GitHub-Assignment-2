@@ -64,6 +64,20 @@ public class Main {
     }
 
     /**
+    *This method will take an array of integers, find its average.
+    */
+    public static int findAvg(int[] inputArray){
+        int sum = 0;
+        int average = 0;
+        for (int i = 0; i < inputArray.length; i++){
+            sum += inputArray[i];
+        }
+        average = sum / inputArray.length;
+
+        return average;
+    }
+
+    /**
     * This method will take an array of integers as parameter and return the sum 
     * of its elements at odd indexes (e.g. 1, 3, 5, etc.)
     */
