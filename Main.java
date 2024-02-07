@@ -19,5 +19,46 @@ public class Main {
             array[i] = (int) (Math.random() * 101);
         }
 
+        int choice = 0; 
+
+        //Displays the choice menu until the user exits.
+        do {
+
+            System.out.println("1. Find the maximum of the array");
+            System.out.println("2. Find the minimum of the array");
+            System.out.println("3. Find the average of the array");
+            System.out.println("4. Display the difference between the average and each element");
+            System.out.println("5. Find the sum of elements with odd-numbered indexes");
+            System.out.println("6. Find the sum of elements with even-numbered indexes");
+            System.out.println("7. Exit");
+
+            //Takes an input for the choice of the user.
+            System.out.print("Enter your choice: ");
+            choice = scanner.nextInt();
+
+            if (choice == 1) {
+                System.out.println("The maximum of the array is: " + findMax(array));
+            }
+            if (choice == 2) {
+                System.out.println("The minimum of the array is: " + findMin(array));
+            } 
+            if (choice == 3) {
+                System.out.println("The average of the array is: " + findAvg(array));
+            }
+            if (choice == 4) {
+                System.out.println("The difference between the average and each element of the array: " + findDiff(array));
+            }
+            if (choice == 5) {
+                System.out.println("The sum of the numbers at odd-numbered indexes in the array is: " + oddSum(array));
+            }    
+            if (choice == 6) {
+                System.out.println("The sum of the numbers at odd-numbered indexes in the array is: " + evenSum(array));
+            }
+            if (choice == 7) {
+                System.out.println("You have exited the program.");
+            }
+
+            System.out.println();
+        }while (choice != 7);
     }
 }
