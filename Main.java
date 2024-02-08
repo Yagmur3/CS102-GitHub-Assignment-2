@@ -47,7 +47,7 @@ public class Main {
                 System.out.println("The average of the array is: " + findAvg(array));
             }
             else if (choice == 4) {
-                System.out.println("The difference between the average and each element of the array: " + findDiff(array));
+                System.out.println("The difference between the average and each element of the array: " + Arrays.toString(findDiff(array)));
             }
             else if (choice == 5) {
                 System.out.println("The sum of the numbers at odd-numbered indexes in the array is: " + oddSum(array));
