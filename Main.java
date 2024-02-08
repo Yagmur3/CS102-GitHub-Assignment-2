@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.lang.Math;
+import java.util.Arrays;
 
 /**
  * This is a menu-driven console application that supports many operations on an array of integers.
