@@ -63,7 +63,28 @@ public class Main {
         }while (choice != 7);
         
     }
-
+    //this method will find the minimum of the array
+    public static int findMinimum(int[] givenArray){
+        int min = givenArray[0];
+        //iterate throught the array to find minimum 
+        for(int i = 1; i < givenArray.length; i++){
+            if(givenArray[i] < min){
+                min = givenArray[i];
+            }
+        }
+        return min;
+    }
+    //this method will find the maximum of the array
+    public static int findMaximum(int[] givenArray){
+        int max = givenArray[0];
+        //iterate throught the array to find maximum
+        for(int i = 1; i < givenArray.length; i++){
+            if(givenArray[i] > max){
+                max = givenArray[i];
+            }
+        }
+        return max;
+    }
     /**
     *This method will take an array of integers, find its average.
     */
